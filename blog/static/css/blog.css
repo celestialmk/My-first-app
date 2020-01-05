@@ -47,3 +47,25 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
+
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"]{
+        width: 100%
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    div.example {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    div.example {
+        font-size: 30px;
+        }
+    .content {
+        margin-left: 20px;
+    }
+}
