@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/53d2bb62d7.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <div class="page-header">
@@ -20,8 +22,11 @@
                 <div class="col-md-8">
                     {%block content%}
                     {% endblock %}
-                </div>
+                </div>    
             </div>
         </div>
-    </body>
+        <div class="footer">
+            {% include 'blog/footer.html' %}
+        </div>
+     </body>
 </html>
