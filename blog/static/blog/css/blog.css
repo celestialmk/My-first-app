@@ -4,11 +4,14 @@ html {
 }
 
 .page-header {
-    background-color: #383b43;
+    background-color: #15244e;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
     max-width: 100%;
     margin-bottom: 20px;
+    
+    height:auto;
+    
     
    
 }
@@ -17,11 +20,15 @@ html {
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    
+    
 }
 
 .content {
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 150px;
+    margin-right: 10px
+
 }
 
 h1, h2, h3, h4 {
@@ -49,7 +56,11 @@ h1, h2, h3, h4 {
 
 .post {
     margin-bottom: 70px;
-    
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    line-height: 25px;
+
 }
 
 .post h2 a, .post h2 a:visited {
@@ -58,8 +69,8 @@ h1, h2, h3, h4 {
 
 
 @media only screen and (max-width: 768px) {
-    [class*="col-"]{
-        width: 100%
+    .page-header .page-header .post {
+       max-width: 100%;
     }
 }
 
@@ -75,6 +86,12 @@ h1, h2, h3, h4 {
         }
 }
 
+/* footer*/
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 
 
